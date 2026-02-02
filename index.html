@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Nginx Website</title>
+    <title>Faizan Khan | Portfolio</title>
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <!-- Link CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,42 +18,180 @@
         <nav class="navbar">
             <div class="logo">Faizan Khan</div>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <h1>Welcome to My Simple Nginx Site</h1>
-        <p>This is a basic static website served by Nginx.</p>
-        <a href="#about" class="btn">Learn More</a>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1>Faizan Khan</h1>
+            <p class="hero-title">Software Developer</p>
+            <p class="hero-description">
+                Passionate about building clean, efficient solutions and continuously learning new technologies.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
     </section>
 
     <!-- About Section -->
     <section class="about" id="about">
-        <h2>About This Site</h2>
-        <p>
-            This is a simple static website designed to demonstrate how to serve
-            HTML and CSS files using Nginx.
-        </p>
-        <p>
-            You can customize this page and deploy it easily inside Docker or a VM.
-        </p>
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    I'm a developer currently studying at 42, where I've been honing my skills 
+                    in systems programming, algorithms, and software development.
+                </p>
+                <p>
+                    I enjoy tackling challenging problems and building projects that make a difference. 
+                    My journey in tech has taught me the value of persistence, clean code, and continuous learning.
+                </p>
+                <p>
+                    When I'm not coding, you can find me exploring new technologies, 
+                    contributing to open source, or working on personal projects.
+                </p>
+            </div>
+            <div class="about-info">
+                <div class="info-item">
+                    <span class="info-label">Name:</span>
+                    <span class="info-value">Faizan Khan</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Location:</span>
+                    <span class="info-value">Your City, Country</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Email:</span>
+                    <span class="info-value">faikhan@student.42.fr</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">C</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Shell</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Tools & Technologies</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Nginx</span>
+                    <span class="skill-tag">Linux</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Concepts</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Data Structures</span>
+                    <span class="skill-tag">Algorithms</span>
+                    <span class="skill-tag">System Design</span>
+                    <span class="skill-tag">Networking</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-icon">🖥️</div>
+                <h3>Inception</h3>
+                <p>Docker-based infrastructure with Nginx, WordPress, and MariaDB containers.</p>
+                <div class="project-tech">
+                    <span>Docker</span>
+                    <span>Nginx</span>
+                    <span>WordPress</span>
+                </div>
+                <a href="#" class="project-link">View Project →</a>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">📚</div>
+                <h3>Libft</h3>
+                <p>Custom C library implementing standard library functions from scratch.</p>
+                <div class="project-tech">
+                    <span>C</span>
+                    <span>Makefile</span>
+                </div>
+                <a href="#" class="project-link">View Project →</a>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">🐚</div>
+                <h3>Minishell</h3>
+                <p>A simple shell implementation with pipes, redirections, and built-in commands.</p>
+                <div class="project-tech">
+                    <span>C</span>
+                    <span>Unix</span>
+                    <span>Parsing</span>
+                </div>
+                <a href="#" class="project-link">View Project →</a>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">🎮</div>
+                <h3>So Long / Cub3D</h3>
+                <p>2D/3D game project using graphics libraries and raycasting techniques.</p>
+                <div class="project-tech">
+                    <span>C</span>
+                    <span>MiniLibX</span>
+                    <span>Graphics</span>
+                </div>
+                <a href="#" class="project-link">View Project →</a>
+            </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
-        <h2>Contact</h2>
-        <p>Email: faizand@vmdocker.com</p>
-        <p>Made with ❤️ for learning Nginx</p>
+        <h2>Get In Touch</h2>
+        <p class="contact-description">
+            I'm currently open to new opportunities and collaborations. 
+            Feel free to reach out if you'd like to connect!
+        </p>
+        <div class="contact-links">
+            <a href="mailto:faikhan@student.42.fr" class="contact-item">
+                <span class="contact-icon">✉️</span>
+                <span>Email</span>
+            </a>
+            <a href="https://github.com/faizanmkhan" target="_blank" class="contact-item">
+                <span class="contact-icon">💻</span>
+                <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/faizanm-khan/" target="_blank" class="contact-item">
+                <span class="contact-icon">💼</span>
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://hashnode.com/@systemd" target="_blank" class="contact-item">
+                <span class="contact-icon">📝</span>
+                <span>Blog</span>
+            </a>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2026 MySite. Served by Nginx.</p>
+        <p>© 2026 Faizan Khan. Built with ❤️</p>
     </footer>
 
 </body>
